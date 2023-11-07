@@ -1,0 +1,15 @@
+<launch>
+
+  <machine name="localhost" address="localhost" user="$(optenv USER)" default="true" timeout="30" env-loader="bash" env-loader-path="$(optenv ROS_ENV_LOADER)">
+
+    <node pkg="roscore" type="roscore" name="roscore"/>
+
+  </machine>
+  <arg name = "drone_name" default="$(optenv RMTT_NAMESPACE /)" />
+    <group ns="$(arg drone_name)">
+        <node pkg="rmtt_driver" name="rmtt_driver" type="rmtt_driver.py" output="screen" />
+    </group>
+  <include file="$(find teleop_twist_joy)/launch/prueba_1.launch"/>
+  <include file="$(find rmtt_driver)/launch/prueba_tl.launch"/>
+</launch>
+

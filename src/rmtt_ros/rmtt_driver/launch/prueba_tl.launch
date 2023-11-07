@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="rmtt_driver" name="joy_takeoff_land_triger" type="takeoff_land_joy.py" output="screen">
+        <!-- Add any necessary parameters or arguments here -->
+    </node>
+</launch>
+

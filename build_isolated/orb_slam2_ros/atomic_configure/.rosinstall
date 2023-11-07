@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/dji-tello/catkin_ws/devel_isolated/orb_slam2_ros/setup.sh

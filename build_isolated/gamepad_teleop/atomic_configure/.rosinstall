@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/dji-tello/catkin_ws/devel_isolated/gamepad_teleop/setup.sh

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/dji-tello/catkin_ws/devel_isolated/rmtt_teleop/setup.sh
